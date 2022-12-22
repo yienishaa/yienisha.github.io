@@ -1,10 +1,134 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
+<div class="grid-container">
+    <div class="grid-item button button1">About</div>
+    <div class="grid-item button button1">Experience</div>
+    <div class="grid-item button button1">Projects</div>
+    <div class="grid-item button button1">Contact</div>
+    <div class="grid-item button button1">
+        <span>
+            <img class="moon" src="moon.png" alt="">
+        </span>
+    </div>
+</div>
+<div class="grid-container-2">
+    <div class="grid-item-2">
+        <img src="profile.jpg" alt="Yienisha Abeyratne">
+    </div>
+    <div class="grid-item-2">
+        <p>A committed, hard-working undergraduate student with flexibility to adapt to changing environments. 
+            I worked for 4 years as a Core Network Engineer in Sri Lanka, thereafter I moved to Canada, 
+            and worked at 23e2 Digital part-time as a PPC strategist and Web Developer</p>
+    </div>
+</div>
+<div class="topic">
+    <h3>Experience</h3>
+</div>
+<div class="grid-container-sections">
+    <div class="grid-item-2">
+        <h4>Etisalat Sri-Lanka</h4>
+        <h5>June 2015 - May 2019</h5>
+        <h5>Core Network Engineer</h5>
+    </div>
+    <div class="grid-item-2">
+        <ul>
+            <li>Created numerous KPI reports for overall network performance weekly for performance meetings, 
+                and monitored KPIs of each network nodes managed by the core network department including 
+                Session Border Controller (Oracle and GENBAND), Wireless Call Server (Nokia), Gateway GPRS Support Node (Nokia),
+                 Serving GPRS Support Node(Nokia) and PCRF(ZTE)
+            </li>
+            <li>Resolved trouble tickets assigned to the core network department both by local subscribers (through customer care call
+                center, network operations department) as well as international service providers. Used Wireshark extensively for
+                network trouble shooting
+            </li>
+            <li>Trained new recruits and held informational sessions for trainees on what operations are managed by the core network
+                department (which included mobile call flows, IDD calls flows)
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="grid-container-sections">
+    <div class="grid-item-2">
+        <h4>23e2 Digital Marketing Scarborough, Ontario</h4>
+        <h5>November 2019 - March 2022</h5>
+        <h5>Web Developer and Google Ads Specialist</h5>
+    </div>
+    <div class="grid-item-2">
+        <ul>
+            <li>Designed, developed and provided technical support for an e-commerce website developed in-house</li>
+            <li>Researching and applying relevant search engine optimization methods for websites managed</li>
+            <li>Collaborated with team members and assisted in designing features for a Google business management platform</li>
+            <li>Created and optimized PPC campaigns with Google Ads to align with business goals and objectives</li>
+            <li>Tracked KPIs and created reports to assess performance on a weekly basis</li>
+            <li>Wrote ad copies for advertisements, designed display posters for campaigns</li>
+            <li>Configured Google Tag Manager, Google Analytics, Google Search console to keep track of the website
+            performance </li>
+        </ul>
+    </div>
+</div>
+<div class="grid-container-sections">
+    <div class="grid-item-2">
+        <h4>York University Toronto, Ontario</h4>
+        <h5>May 2022 - Present</h5>
+        <h5>Computing Services Support Assistant</h5>
+    </div>
+    <div class="grid-item-2">
+        <ul>
+            <li>Provided technical support and customer services to users in person, telephone and email through a ticketing system</li>
+            <li>Document and respond to service requests, incidents, and general information requests received at the help-desk</li>
+            <li>Troubleshoot and resolve computing and account related issues</li>
+        </ul>
+    </div>
+</div>
 
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
-
+<div class="topic">
+    <h3>Projects</h3>
+</div>
+<div class="grid-container-sections">
+    <div class="grid-item-2">
+        <h4>E-Commerce Website</h4>
+    </div>
+    <div class="grid-item-2">
+        <ul>
+            <li>Designed and developed an e-commerce website for a CPAP equipment retailer. www.cpapclinic.ca
+            <li>Integrated with the PayPal API to manage one-time payments and subscriptions</li>
+            <li>Integrated with the CanadaPost API to create manifests and shipping labels</li>
+            <li>Used Cron to update the subscription payments on the local database tables</li>
+            <li>Improved the UI from a static website to be responsive</li>
+            <li>Implemented account creation and management functionality for customers</li>
+        </ul>
+    </div>
+</div>
+<div class="grid-container-sections">
+    <div class="grid-item-2">
+        <h4>SMART ROAM</h4>
+    </div>
+    <div class="grid-item-2">
+        <ul>
+            <li>Developed a USSD Short code to let mobile subscribers subscribe to various roaming related services and view
+                 roaming rates. (#123# - for all Etisalat Srilanka customers)</li>
+        </ul>
+    </div>
+</div>
+<div class="grid-container-sections">
+    <div class="grid-item-2">
+        <h4>Bill Shock Prevention Notifier</h4>
+    </div>
+    <div class="grid-item-2">
+        <ul>
+            <li>Designed and developed both the back-end and front-end of the bill shock prevention SMS notification system, to
+                calculate mobile data usage of roamers in real-time, and send notification updates close to the credit limit for postpaid
+                customers</li>
+            <li>Integrated with the data warehouse and the bulk SMSC to get data for usage calculation and to send SMS notifications</li>
+            <li>Queried the partial CDRs from the GGSN database on DWH and consolidated them to make a complete CDR, and
+                compared it to the TAP data from the roaming partner for verification using Cron and updated the tables.</li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>
