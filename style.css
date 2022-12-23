@@ -1,5 +1,5 @@
 .dark-mode {
-    background-color: black;
+    background-color: #080808e2;
     color: white;
   }
   body {
@@ -49,17 +49,19 @@ li{
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto 10%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 @media only screen and (max-width: 768px) {
     [class="grid-container"] {
-        grid-template-columns: 100%;
+        visibility: collapse;
     }
 }
 .grid-container-2 {
     display: grid;
     padding-left: 10%;
     padding-right: 10%;
-    
+    padding-top: 10%;
     padding-bottom: 5%;
     grid-template-columns: 30% 70%;
   }
@@ -108,7 +110,8 @@ li{
   }
   
   .button1 {
-    background-color: white; 
+    padding-left: 2%;
+    padding-right: 2%; 
     color: black; 
   }
   
@@ -131,6 +134,13 @@ li{
     filter:saturate(3);
   -webkit-filter:saturate(3);
   }
+@media only screen and (max-width: 768px) {
+    [class="moon"] {
+        width: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+}
   .topic{
     padding-left: 10%;
     padding-right: 10%;
@@ -144,4 +154,15 @@ li{
         padding-bottom: 2%;
         font-size: 3vw;
     }
+}
+@media only screen and (max-width: 768px) {
+.navbar {
+  background-color: lightgray;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-left: 10%;
+  position: fixed;
+  }
 }
