@@ -7,10 +7,10 @@
 </head>
 <body>
 <div class="grid-container navbar topnav">
-    <div class="grid-item animate-text"><h3>About</h3></div>
-    <div class="grid-item animate-text"><h3>Experience</h3></div>
-    <div class="grid-item animate-text"><h3>Projects</h3></div>
-    <div class="grid-item animate-text"><h3>Contact</h3></div>
+    <div class="grid-item animate-text"><h4><a href="#about">About</a></h4></div>
+    <div class="grid-item animate-text"><h4><a href="#experience">Experience</a></h4></div>
+    <div class="grid-item animate-text"><h4><a href="#projects">Projects</a></h4></div>
+    <div class="grid-item animate-text"><h4><a href="#contacts">Contact</a></h4></div>
     <div class="grid-item">
         <span>
             <img class="moon" id="darkmode" src="moon.png" onclick="changeToDarkMode()">
@@ -18,7 +18,7 @@
     </div>
 </div>
 <div class="grid-container-2">
-    <div class="grid-item-2">
+    <div class="grid-item-2" id="about">
         <img src="profile.jpg" alt="Yienisha Abeyratne">
     </div>
     <div class="grid-item-2">
@@ -27,8 +27,8 @@
             and worked at 23e2 Digital part-time as a PPC strategist and Web Developer</p>
     </div>
 </div>
-<div class="topic">
-    <h3 class="animate-text">Experience</h3>
+<div class="topic" id="experience">
+    <h4 class="animate-text">Experience</h4>
 </div>
 <div class="grid-container-sections">
     <div class="grid-item-2">
@@ -87,7 +87,7 @@
     </div>
 </div>
 
-<div class="topic">
+<div class="topic" id="projects">
     <h3 class="animate-text">Projects</h3>
 </div>
 <div class="grid-container-sections">
@@ -131,14 +131,22 @@
         </ul>
     </div>
 </div>
-<div class="grid-container-sections">
+<div class="topic" id="contacts">
+    <h3 class="animate-text">Contact</h3>
+</div>
+<div class="grid-container-contact">
     <div class="grid-item-2">
-        <h4 class="animate-text">Contact</h4>
+            <a href="mailto:example@example.com" target="_blank"><h6>Email</h6></a>
     </div>
     <div class="grid-item-2">
-            <p>Email</p>
-            <p>LinkedIn</p>
-   </div>
+        <a href="https://www.linkedin.com/in/yienisha-abeyratne/" target="_blank"><h6 class="animate-text">LinkedIn</h6></a>
+    </div>
+    <div class="grid-item-2">
+        <a href="https://github.com/yienishaa" target="_blank"><h6 class="animate-text">GitHub</h6></a>
+    </div>
+    <div class="grid-item-2">
+        <h6>Email</h6>
+    </div>
 </div>
     </div>
 </div>
@@ -150,7 +158,8 @@
         element.classList.toggle("dark-mode");
         if(image.getAttribute('src') == "moon.png")
         {
-            image.src = "sun.png";
+            image.src = "icons8-smiling-sun-24.png";
+           
         }
         else{
             image.src = "moon.png";
