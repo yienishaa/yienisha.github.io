@@ -12,17 +12,39 @@ h1{
 h2{
     font-size: 3.5vw;
 }
+.animate-text{
+    
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+.animate-text::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #5ba2ed;
+  transform-origin: bottom left;
+  transition: transform 0.5s ease-out;
+}
+.animate-text:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 h3{
-    font-size: 3vw;
+  font-size: 2vw;
 }
 h4{
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 h5{
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 p{
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 li{
     font-size: 1vw;
@@ -145,14 +167,14 @@ li{
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 2%;
-    font-size: 16vw;
+    font-size: 3vw;
     text-align: left;
   }
   @media only screen and (max-width: 768px) {
     [class*="topic"] {
         padding-top: 2%;
         padding-bottom: 2%;
-        font-size: 3vw;
+        font-size: 2vw;
     }
 }
 @media only screen and (max-width: 768px) {

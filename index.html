@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="grid-container">
-    <div class="grid-item button button1">About</div>
-    <div class="grid-item button button1">Experience</div>
-    <div class="grid-item button button1">Projects</div>
-    <div class="grid-item button button1">Contact</div>
-    <div class="grid-item button button1">
+<div class="grid-container navbar topnav">
+    <div class="grid-item animate-text"><h3>About</h3></div>
+    <div class="grid-item animate-text"><h3>Experience</h3></div>
+    <div class="grid-item animate-text"><h3>Projects</h3></div>
+    <div class="grid-item animate-text"><h3>Contact</h3></div>
+    <div class="grid-item">
         <span>
-            <img class="moon" src="moon.png" alt="">
+            <img class="moon" id="darkmode" src="moon.png" onclick="changeToDarkMode()">
         </span>
     </div>
 </div>
@@ -27,7 +28,7 @@
     </div>
 </div>
 <div class="topic">
-    <h3>Experience</h3>
+    <h3 class="animate-text">Experience</h3>
 </div>
 <div class="grid-container-sections">
     <div class="grid-item-2">
@@ -87,7 +88,7 @@
 </div>
 
 <div class="topic">
-    <h3>Projects</h3>
+    <h3 class="animate-text">Projects</h3>
 </div>
 <div class="grid-container-sections">
     <div class="grid-item-2">
@@ -95,7 +96,7 @@
     </div>
     <div class="grid-item-2">
         <ul>
-            <li>Designed and developed an e-commerce website for a CPAP equipment retailer. www.cpapclinic.ca
+            <li>Designed and developed an e-commerce website for a CPAP equipment retailer.
             <li>Integrated with the PayPal API to manage one-time payments and subscriptions</li>
             <li>Integrated with the CanadaPost API to create manifests and shipping labels</li>
             <li>Used Cron to update the subscription payments on the local database tables</li>
@@ -130,5 +131,31 @@
         </ul>
     </div>
 </div>
+<div class="grid-container-sections">
+    <div class="grid-item-2">
+        <h4 class="animate-text">Contact</h4>
+    </div>
+    <div class="grid-item-2">
+            <p>Email</p>
+            <p>LinkedIn</p>
+   </div>
+</div>
+    </div>
+</div>
+
+<script>
+    function changeToDarkMode() {
+        var image =  document.getElementById("darkmode");
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        if(image.getAttribute('src') == "moon.png")
+        {
+            image.src = "sun.png";
+        }
+        else{
+            image.src = "moon.png";
+        }
+    }
+    </script>
 </body>
 </html>
